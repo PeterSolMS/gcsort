@@ -275,7 +275,9 @@ def generate_compounded_sorters(f, width, type, ascending):
     suffix = "ascending" if ascending else "descending"
     rev_suffix = "descending" if ascending else "ascending"
 
-    s = f"""    static INLINE void sort_{width:02d}v_{suffix}({generate_param_def_list(width, type)}) {{
+    inline = "INLINE" if width <= 4 else "NOINLINE"
+
+    s = f"""    static {inline} void sort_{width:02d}v_{suffix}({generate_param_def_list(width, type)}) {{
     {bitonic_type_map[type]}  tmp{maybe_cmp()};{maybe_topbit()}
 
     sort_{w1:02d}v_{suffix}({generate_param_list(1, w1)});
@@ -311,7 +313,9 @@ def generate_compounded_mergers(f, width, type, ascending):
     suffix = "ascending" if ascending else "descending"
     rev_suffix = "descending" if ascending else "ascending"
 
-    s = f"""    static INLINE void sort_{width:02d}v_merge_{suffix}({generate_param_def_list(width, type)}) {{
+    inline = "INLINE" if width <= 4 else "NOINLINE"
+
+    s = f"""    static {inline} void sort_{width:02d}v_merge_{suffix}({generate_param_def_list(width, type)}) {{
     {bitonic_type_map[type]}  tmp{maybe_cmp()};{maybe_topbit()}"""
     print(s, file=f)
 

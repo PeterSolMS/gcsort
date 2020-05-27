@@ -289,7 +289,7 @@ public:
     sort_02v_merge_descending(d01, d02);
     sort_02v_merge_descending(d03, d04);
 }
-    static INLINE void sort_05v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
+    static NOINLINE void sort_05v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -304,7 +304,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_01v_merge_ascending(d05);
 }
-    static INLINE void sort_05v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
+    static NOINLINE void sort_05v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -319,7 +319,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_01v_merge_descending(d05);
 }
-    static INLINE void sort_05v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
+    static NOINLINE void sort_05v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -332,7 +332,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_01v_merge_ascending(d05);
 }
-    static INLINE void sort_05v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
+    static NOINLINE void sort_05v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -345,7 +345,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_01v_merge_descending(d05);
 }
-    static INLINE void sort_06v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
+    static NOINLINE void sort_06v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -365,7 +365,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_02v_merge_ascending(d05, d06);
 }
-    static INLINE void sort_06v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
+    static NOINLINE void sort_06v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -385,7 +385,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_02v_merge_descending(d05, d06);
 }
-    static INLINE void sort_06v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
+    static NOINLINE void sort_06v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -404,7 +404,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_02v_merge_ascending(d05, d06);
 }
-    static INLINE void sort_06v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
+    static NOINLINE void sort_06v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -423,7 +423,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_02v_merge_descending(d05, d06);
 }
-    static INLINE void sort_07v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
+    static NOINLINE void sort_07v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -448,7 +448,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_03v_merge_ascending(d05, d06, d07);
 }
-    static INLINE void sort_07v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
+    static NOINLINE void sort_07v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -473,7 +473,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_03v_merge_descending(d05, d06, d07);
 }
-    static INLINE void sort_07v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
+    static NOINLINE void sort_07v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -498,7 +498,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_03v_merge_ascending(d05, d06, d07);
 }
-    static INLINE void sort_07v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
+    static NOINLINE void sort_07v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -523,7 +523,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_03v_merge_descending(d05, d06, d07);
 }
-    static INLINE void sort_08v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
+    static NOINLINE void sort_08v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -553,7 +553,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_04v_merge_ascending(d05, d06, d07, d08);
 }
-    static INLINE void sort_08v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
+    static NOINLINE void sort_08v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -583,7 +583,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_04v_merge_descending(d05, d06, d07, d08);
 }
-    static INLINE void sort_08v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
+    static NOINLINE void sort_08v_merge_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -614,7 +614,7 @@ public:
     sort_04v_merge_ascending(d01, d02, d03, d04);
     sort_04v_merge_ascending(d05, d06, d07, d08);
 }
-    static INLINE void sort_08v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
+    static NOINLINE void sort_08v_merge_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -645,7 +645,7 @@ public:
     sort_04v_merge_descending(d01, d02, d03, d04);
     sort_04v_merge_descending(d05, d06, d07, d08);
 }
-    static INLINE void sort_09v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09) {
+    static NOINLINE void sort_09v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -660,7 +660,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_01v_merge_ascending(d09);
 }
-    static INLINE void sort_09v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09) {
+    static NOINLINE void sort_09v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -675,7 +675,7 @@ public:
     sort_08v_merge_descending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_01v_merge_descending(d09);
 }
-    static INLINE void sort_10v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10) {
+    static NOINLINE void sort_10v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -695,7 +695,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_02v_merge_ascending(d09, d10);
 }
-    static INLINE void sort_10v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10) {
+    static NOINLINE void sort_10v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -715,7 +715,7 @@ public:
     sort_08v_merge_descending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_02v_merge_descending(d09, d10);
 }
-    static INLINE void sort_11v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11) {
+    static NOINLINE void sort_11v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -740,7 +740,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_03v_merge_ascending(d09, d10, d11);
 }
-    static INLINE void sort_11v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11) {
+    static NOINLINE void sort_11v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -765,7 +765,7 @@ public:
     sort_08v_merge_descending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_03v_merge_descending(d09, d10, d11);
 }
-    static INLINE void sort_12v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12) {
+    static NOINLINE void sort_12v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -795,7 +795,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_04v_merge_ascending(d09, d10, d11, d12);
 }
-    static INLINE void sort_12v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12) {
+    static NOINLINE void sort_12v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -825,7 +825,7 @@ public:
     sort_08v_merge_descending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_04v_merge_descending(d09, d10, d11, d12);
 }
-    static INLINE void sort_13v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13) {
+    static NOINLINE void sort_13v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -860,7 +860,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_05v_merge_ascending(d09, d10, d11, d12, d13);
 }
-    static INLINE void sort_13v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13) {
+    static NOINLINE void sort_13v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -895,7 +895,7 @@ public:
     sort_08v_merge_descending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_05v_merge_descending(d09, d10, d11, d12, d13);
 }
-    static INLINE void sort_14v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14) {
+    static NOINLINE void sort_14v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -935,7 +935,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_06v_merge_ascending(d09, d10, d11, d12, d13, d14);
 }
-    static INLINE void sort_14v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14) {
+    static NOINLINE void sort_14v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -975,7 +975,7 @@ public:
     sort_08v_merge_descending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_06v_merge_descending(d09, d10, d11, d12, d13, d14);
 }
-    static INLINE void sort_15v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15) {
+    static NOINLINE void sort_15v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -1020,7 +1020,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_07v_merge_ascending(d09, d10, d11, d12, d13, d14, d15);
 }
-    static INLINE void sort_15v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15) {
+    static NOINLINE void sort_15v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -1065,7 +1065,7 @@ public:
     sort_08v_merge_descending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_07v_merge_descending(d09, d10, d11, d12, d13, d14, d15);
 }
-    static INLINE void sort_16v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15, __m256i& d16) {
+    static NOINLINE void sort_16v_ascending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15, __m256i& d16) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
@@ -1115,7 +1115,7 @@ public:
     sort_08v_merge_ascending(d01, d02, d03, d04, d05, d06, d07, d08);
     sort_08v_merge_ascending(d09, d10, d11, d12, d13, d14, d15, d16);
 }
-    static INLINE void sort_16v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15, __m256i& d16) {
+    static NOINLINE void sort_16v_descending(__m256i& d01, __m256i& d02, __m256i& d03, __m256i& d04, __m256i& d05, __m256i& d06, __m256i& d07, __m256i& d08, __m256i& d09, __m256i& d10, __m256i& d11, __m256i& d12, __m256i& d13, __m256i& d14, __m256i& d15, __m256i& d16) {
     __m256i  tmp, cmp;
         __m256i topBit = _mm256_set1_epi64x(1LLU << 63);
 
